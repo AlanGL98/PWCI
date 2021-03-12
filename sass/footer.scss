@@ -1,0 +1,31 @@
+.contenedor{
+    .footer{
+        grid-area: footer;
+        background: $colorP;
+        .enlaces-footer {
+            width: 70%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .btn-pw{
+                text-align: center;
+                width: 20%;
+            }
+        }
+        .derechos {
+            font-size: 0.8em;
+            text-align: center;
+        }
+        .redes-sociales {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            .fa {
+                margin: 20px;
+                font-size: 2em;
+            }
+        }
+    }
+}

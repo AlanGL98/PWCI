@@ -1,0 +1,42 @@
+.contenedor{
+    .aside{
+        grid-area: aside;
+        top: 80px;
+        position: sticky;
+        //background: rgb(0, 38, 255);
+        color: #000;
+        .filtros{
+            margin: auto;
+            top: 70px;
+            width: 70%;
+            border-right: solid #000 1px;
+            .separador-categorias{
+                margin-top: 20px;
+                width: 100%;
+            }
+            .filtro{
+                display: flex;
+                flex-wrap: wrap;
+                label{
+                    width: 95%;
+                }
+                p{
+                    width: 10%;
+                    margin: 0;
+                    text-align: center;
+                }
+                .input{
+                    width: 10%;
+                }
+                .check{
+                    width: 20px;
+                }
+                .txtbox{
+                    width: 35%;
+                    outline: none;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
