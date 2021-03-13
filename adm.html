@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCourse - Perfil</title>
+    <link rel="icon" type="png" href="img/logo-u.png" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="header-logo">
+                <button class="btn-pw" id="nav-menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <form action="busqueda.html" method="get" class="header-buscar">
+                <input type="text" placeholder="Buscar" class="input"><button type="submit" class="btn-pw"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+
+            <div class="header-user">
+                <a href="" class="btn-pw"><i class="fa fa-user-o" aria-hidden="true"></i>Iniciar Sesion</a>
+                <!-- <button class="btn-pw"><i class="fa fa-user-o" aria-hidden="true"></i>Iniciar Sesion</button> -->
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="separador">
+                <h2 class="info">Mi informacion</h2>
+                <!-- <a href="" class="btn-pw">Crear Noticia</a> -->
+            </div>
+
+            <div class="paneles" id="paneles">
+                <div class="tab-panel activo rojo">
+                    <form action="" method="post" class="mi-perfil mitad" id="cambia-foto" enctype="multipart/form-data">
+                        <h2 class="titulo">Foto de perfil</h2>
+                        <img class="new-foto" src="img/user/4f6f1df3b17d2672920a606887a08c2e.jpg" alt="" id="img">
+                        <input id="file" type="file" name="file" class="btn-pw" required/>
+                        <input type="submit" value="Cambiar foto de perfil" name="btnEditFoto" class="btn-pw">
+                    </form>
+                    <form action="" method="post" class="mi-perfil mitad" id="cambia-pass">
+                        <h4 class="accion">Contraseña actual:</h4>
+                        <input type="password" name="currentPass" placeholder="Contraseña actual" class="inputs" value="">
+                        <h4 class="accion">Nueva contraseña:</h4>
+                        <input type="password" name="newPass" placeholder="Nueva contraseña" class="inputs" value="">
+                        <h4 class="accion">Confirmar nueva contraseña:</h4>
+                        <input type="password" name="confirmNewPass" placeholder="Confirmar nueva contraseña" class="inputs" value="">
+                        <input type="submit" class="btn-pw" name="btnEditPass" value="Cambiar contraseña">
+                    </form>
+                    <form action="" method="post" class="mi-perfil" id="cambiaDatos">
+                        <div class="datos-actuales">
+                            <h3 class="accion">Datos actuales</h3>
+                            <h4 class="accion">Nombre: </h4><h2 class="accion">Jose Antonio</h2>
+                            <h4 class="accion">Apellido paterno: </h4><h2 class="accion">Gallegos</h2>
+                            <h4 class="accion">Apellido materno: </h4><h2 class="accion">Alvarez</h2>
+                            <h4 class="accion">Correo: </h4><h2 class="accion">correo@prueba.com</h2>
+                            <h4 class="accion">Nickname: </h4><h2 class="accion">Toñafro</h2>
+                        </div>
+                        <h2 class="accion">Actualizar Datos</h2>
+                        <h4 class="accion">Nombre</h4>
+                        <input type="text" name="nombre" placeholder="Nombre" class="inputs" value="">
+                        <h4 class="accion">Apellido Paterno</h4>
+                        <input type="text" name="apellidoP" placeholder="Apellido Paterno" class="inputs" value="">
+                        <h4 class="accion">Apellido Materno</h4>
+                        <input type="text" name="apellidoM" placeholder="Apellido Materno" class="inputs" value="">
+                        
+                        <input type="submit" class="btn-pw" name="btnEditUser" value="Actualizar datos">
+                    </form>
+                </div>
+                <div class="tab-panel amarillo">
+                    <a href="" class="card-pw busqueda">
+                        <div class="card-img">
+                            <img src="img/Curso.jpg" alt="">
+                        </div>
+                        <h3 class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque ducimus fugiat quam ipsum temporibus voluptate ut quos ex</h3>
+                    </a>
+                    <a href="" class="card-pw busqueda">
+                        <div class="card-img">
+                            <img src="img/Curso.jpg" alt="">
+                        </div>
+                        <h3 class="titulo">Lorem ipsum dolor si. Nostrum eaque ducimus fugiat quam ipsum temporibus voluptate ut quos ex</h3>
+                    </a>
+                    <a href="" class="card-pw busqueda">
+                        <div class="card-img">
+                            <img src="img/Curso.jpg" alt="">
+                        </div>
+                        <h3 class="titulo">Lorem ipsum dolors voluptate ut quos ex</h3>
+                    </a>
+                    <a href="" class="card-pw busqueda">
+                        <div class="card-img">
+                            <img src="img/Curso.jpg" alt="">
+                        </div>
+                        <h3 class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.  ipsum temporibus voluptate ut quos ex</h3>
+                    </a>
+                </div>
+                <div class="tab-panel amarillo">
+                    <form action="" class="crea-nota" id="crea-nota">
+                        <h4 class="titulo">Titulo:</h4>
+                        <input type="text" name="titulo" placeholder="Titulo del curso" class="inputs">
+                        <h4 class="titulo">Descripcion:</h4>
+                        <textarea cols="2" name="descripcion"rows="15" placeholder="Descripcion del curso" class="inputs"></textarea>
+                        <h4 class="titulo">Categoria:</h4>
+                        <select id="tipo" name="tipo" class="inputs">
+                            <option value="0">Ninguno</option>
+                            <option value="1">Categoria 1</option>
+                            <option value="2">Categoria 2</option>
+                            <option value="3">Categoria 3</option>
+                            <option value="4">Categoria 4</option>
+                            <option value="4">Categoria 5</option>
+                        </select>
+                        <h4 class="titulo">Seleccion de carpeta:</h4>
+                        <input type="file" name="foto1" class="inputs caja" required>
+                        <!-- <input type="file" name="foto2" class="inputs caja" required>
+                        <input type="file" name="foto3" class="inputs caja" required> -->
+                        <!-- <h4 class="titulo">Video:</h4>
+                        <input type="file" name="video" class="inputs caja">
+                        <input type="text" name="videoLink"placeholder="Link del video" class="inputs caja"> -->
+
+                        <input type="submit" value="Crear noticia" name="btnCreaNota" class="btn-pw">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <aside class="aside">
+            <div class="perfil">
+                <div class="usuario">
+                    <div class="usuario-img">
+                        <img src="img/user/4f6f1df3b17d2672920a606887a08c2e.jpg" alt="">
+                    </div>
+                    <h3 class="info-user">Usuario</h3>
+                </div>
+                <div class="panel-opciones-perfil" id="padre-contenedor">
+                    <button class="btn-pw">Informacion</button>
+                    <button class="btn-pw">Mis cursos</button>
+                    <button class="btn-pw">Crear curso</button>
+                </div>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <div class="enlaces-footer">
+                <a href="" class="btn-pw">QUIENES SOMOS</a>
+                <a href="" class="btn-pw">BLOG</a>
+                <a href="" class="btn-pw">CONTACTO</a>
+                <a href="" class="btn-pw">AYUDA</a>
+            </div>
+            <h3 class="derechos">© 2020 PIA - PROGRAMACION WEB. ALAN GONZALEZ LEOS. TODOS LOS DERECHOS RESERVADOS</h3>
+            <div class="redes-sociales">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/perfil.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

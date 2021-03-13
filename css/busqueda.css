@@ -1,0 +1,32 @@
+.contenedor .section .busqueda {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-width: 0px;
+}
+
+.contenedor .section .busqueda .card-img {
+  width: 20%;
+  margin: 0;
+  height: auto;
+}
+
+.contenedor .section .busqueda .card-img img {
+  width: 150%;
+}
+
+.contenedor .section .busqueda .titulo {
+  width: 60%;
+  margin: 10px;
+}
+
+.contenedor .section .busqueda .precio {
+  width: 10%;
+}
+/*# sourceMappingURL=busqueda.css.map */

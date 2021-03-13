@@ -1,0 +1,27 @@
+$colorP: rgb(0, 28, 105);
+$colorS: #fff;
+$colorT: rgb(255, 208, 0);
+
+.navebar {
+    background-color: rgb(0, 28, 105);
+}
+
+.user_name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.comments-list .media {
+    border-bottom: 1px dotted #ccc;
+}
+
+.boton{
+    background: none;
+    transition: 0.3s;
+    color: $colorT;
+    border: none;
+    &:hover{
+        background: rgba($colorT, 0.8);
+        color: $colorP;
+    }
+}

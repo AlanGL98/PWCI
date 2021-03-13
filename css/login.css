@@ -1,0 +1,42 @@
+.navebar {
+  background-color: #001c69;
+}
+
+.login-pw {
+  margin-top: 20px;
+}
+
+.boton {
+  background: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #ffd000;
+  background: #001c69;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.boton:hover {
+  background: rgba(255, 208, 0, 0.8);
+  color: #001c69;
+}
+
+.error {
+  background: red;
+  color: #fff;
+  padding: 10px;
+  width: 500px;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=login.css.map */

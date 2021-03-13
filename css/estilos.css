@@ -188,7 +188,6 @@ p {
   width: 350px;
   border-radius: 10px;
   overflow: hidden;
-  border: solid #000 1px;
   margin: 10px;
   -webkit-transition: 0.2s;
   transition: 0.2s;

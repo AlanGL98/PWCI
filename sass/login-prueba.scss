@@ -1,0 +1,11 @@
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    background: chartreuse;
+    display: flex;
+    .login{
+        width: 40%;
+        margin: auto;
+        background-color: blue;
+    }
+}

@@ -1,0 +1,26 @@
+.navebar {
+  background-color: #001c69;
+}
+
+.user_name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.comments-list .media {
+  border-bottom: 1px dotted #ccc;
+}
+
+.boton {
+  background: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #ffd000;
+  border: none;
+}
+
+.boton:hover {
+  background: rgba(255, 208, 0, 0.8);
+  color: #001c69;
+}
+/*# sourceMappingURL=curso.css.map */
