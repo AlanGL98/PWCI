@@ -1,0 +1,86 @@
+$colorP1: rgb(16, 28, 61);
+$colorS: #fff;
+$colorT: rgb(135, 206, 250);
+$negro: #000;
+$gris: #999;
+$rojo: red;
+$rojoDark: rgb(117, 0, 0);
+
+.section{
+    .video{
+        width: 70%;
+        video{
+            width: 100%;
+        }
+    }
+    .secciones{
+        width: 30%;
+        //position: relative;
+
+        .caja{
+            display: flex;
+            flex-wrap: wrap;
+            //position: absolute;
+            .btn-capa{
+                text-align: left;
+                width: 100%;
+                background: rgba($gris, 0.2);
+                color: $negro;
+                border: $negro solid 1px;
+                border-radius: 2.5px;
+                &:hover{
+                    background: rgba($gris, 0.3);
+                }
+                &:focus{
+                    background: rgba($gris, 0.4);
+                }
+                .fas{
+                    margin-right: 10px;
+                }
+            }
+            .s{
+                width: 100%;
+                color: $negro;
+                overflow: hidden;
+                height: 0px;
+                transition: 0.2s;
+                display: flex;
+                flex-wrap: wrap;
+                //background: rgba($gris, 0.05);
+                border-radius: 2.5px;
+                a{
+                    width: 100%;
+                }
+                .btn-capa{
+                    text-align: left;
+                    width: 100%;
+                    border: none;
+                    background: $colorS;
+                    color: $negro;
+                    border-radius: 2.5px;
+                    &:hover{
+                        background: rgba($gris, 0.5);
+                    }
+                    &:focus{
+                        background: rgba($gris, 0.4);
+                    }
+                    .fas{
+                        margin-right: 10px;
+                    }
+                }
+                
+                .punto{
+                    width: 100%;
+                    color: $negro;
+                    padding: 10px 30px;
+                    margin-bottom: 0;
+                }
+            }
+            .s-activo{
+                height: auto;
+                //border: $gris solid 1px;
+                transition: 0.2s;
+            }
+        }
+    }
+}

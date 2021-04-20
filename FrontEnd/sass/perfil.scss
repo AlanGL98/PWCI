@@ -1,0 +1,131 @@
+$colorP1: rgb(16, 28, 61);
+$colorS: #fff;
+$colorT: rgb(135, 206, 250);
+$negro: #000;
+$gris: #999;
+$rojo: red;
+$rojoDark: rgb(117, 0, 0);
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px auto auto auto auto;
+    grid-gap: 20px;
+    grid-template-areas:    "header header header"
+                            "aside section section"
+                            "nulo3 section section"
+                            "nulo nulo2 nulo4"
+                            "footer footer footer";
+    transition: 200ms;
+}
+
+.aside{
+    grid-area: aside;
+    background: url('../img/bg/dark-paths.png');
+    background-attachment: fixed;
+    position: sticky;
+    top: 80px;
+    border-radius: 5px;
+    .img{
+        margin: 20px auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        border: $colorS solid 5px;
+        img{
+            height: 100%;
+        }
+    }
+    .usuario{
+        width: 100%;
+        text-align: center;
+    }
+    .tipo{
+        width: 100%;
+        text-align: center;
+    }
+    .botones{
+        margin-top: 30px;
+        width: 100%;
+        .btn-capa{
+            width: 100%;
+        }
+    }
+}
+
+.section{
+    grid-area: section;
+    display: flex;
+    flex-wrap: wrap;
+    .password{
+        background: url('../img/bg/dark-paths.png');
+        background-attachment: fixed;
+        width: 40%;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        .titulo{
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .txtInput{
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            outline: none;
+            border-radius: 5px;
+            border: $colorT solid 3px;
+            transition: 0.5s;
+            height: 40px;
+            &:focus{
+                border: $colorP1 solid 3px;
+                border-radius: 150px;
+            }
+        }
+        .btn-capa{
+            width: 100%;
+        }
+    }
+
+    .datos-perfil{
+        background: url('../img/bg/dark-paths.png');
+        background-attachment: fixed;
+        width: 100%;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        .titulo{
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        p{
+            width: 48%;
+            margin: 5px auto;
+        }
+        .txtInput{
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            margin-bottom: 20px;
+            padding: 10px;
+            outline: none;
+            border-radius: 5px;
+            border: $colorT solid 3px;
+            transition: 0.5s;
+            height: 40px;
+            &:focus{
+                border: $colorP1 solid 3px;
+                border-radius: 150px;
+            }
+        }
+        .btn-capa{
+            width: 100%;
+        }
+    }
+}

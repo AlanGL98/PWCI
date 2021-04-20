@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,IAAI;CAMhB;;AAVD,AAKI,WALO,CAKP,MAAM,CAAA;EACF,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,IAAI;CACzB",
-    "sources": [
-        "../sass/login-prueba.scss"
-    ],
-    "names": [],
-    "file": "login-prueba.css"
-}

@@ -1,0 +1,94 @@
+.section .video {
+  width: 70%;
+}
+
+.section .video video {
+  width: 100%;
+}
+
+.section .secciones {
+  width: 30%;
+}
+
+.section .secciones .caja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section .secciones .caja .btn-capa {
+  text-align: left;
+  width: 100%;
+  background: rgba(153, 153, 153, 0.2);
+  color: #000;
+  border: #000 solid 1px;
+  border-radius: 2.5px;
+}
+
+.section .secciones .caja .btn-capa:hover {
+  background: rgba(153, 153, 153, 0.3);
+}
+
+.section .secciones .caja .btn-capa:focus {
+  background: rgba(153, 153, 153, 0.4);
+}
+
+.section .secciones .caja .btn-capa .fas {
+  margin-right: 10px;
+}
+
+.section .secciones .caja .s {
+  width: 100%;
+  color: #000;
+  overflow: hidden;
+  height: 0px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 2.5px;
+}
+
+.section .secciones .caja .s a {
+  width: 100%;
+}
+
+.section .secciones .caja .s .btn-capa {
+  text-align: left;
+  width: 100%;
+  border: none;
+  background: #fff;
+  color: #000;
+  border-radius: 2.5px;
+}
+
+.section .secciones .caja .s .btn-capa:hover {
+  background: rgba(153, 153, 153, 0.5);
+}
+
+.section .secciones .caja .s .btn-capa:focus {
+  background: rgba(153, 153, 153, 0.4);
+}
+
+.section .secciones .caja .s .btn-capa .fas {
+  margin-right: 10px;
+}
+
+.section .secciones .caja .s .punto {
+  width: 100%;
+  color: #000;
+  padding: 10px 30px;
+  margin-bottom: 0;
+}
+
+.section .secciones .caja .s-activo {
+  height: auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+/*# sourceMappingURL=video.css.map */

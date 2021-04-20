@@ -1,0 +1,156 @@
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 60px auto auto auto auto;
+      grid-template-rows: 60px auto auto auto auto;
+  grid-gap: 20px;
+      grid-template-areas: "header header header" "aside section section" "nulo3 section section" "nulo nulo2 nulo4" "footer footer footer";
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.aside {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: aside;
+  background: url("../img/bg/dark-paths.png");
+  background-attachment: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  border-radius: 5px;
+}
+
+.aside .img {
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: #fff solid 5px;
+}
+
+.aside .img img {
+  height: 100%;
+}
+
+.aside .usuario {
+  width: 100%;
+  text-align: center;
+}
+
+.aside .tipo {
+  width: 100%;
+  text-align: center;
+}
+
+.aside .botones {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.aside .botones .btn-capa {
+  width: 100%;
+}
+
+.section {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: section;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section .password {
+  background: url("../img/bg/dark-paths.png");
+  background-attachment: fixed;
+  width: 40%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.section .password .titulo {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.section .password .txtInput {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: lightskyblue solid 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 40px;
+}
+
+.section .password .txtInput:focus {
+  border: #101c3d solid 3px;
+  border-radius: 150px;
+}
+
+.section .password .btn-capa {
+  width: 100%;
+}
+
+.section .datos-perfil {
+  background: url("../img/bg/dark-paths.png");
+  background-attachment: fixed;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.section .datos-perfil .titulo {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.section .datos-perfil p {
+  width: 48%;
+  margin: 5px auto;
+}
+
+.section .datos-perfil .txtInput {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: lightskyblue solid 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 40px;
+}
+
+.section .datos-perfil .txtInput:focus {
+  border: #101c3d solid 3px;
+  border-radius: 150px;
+}
+
+.section .datos-perfil .btn-capa {
+  width: 100%;
+}
+/*# sourceMappingURL=perfil.css.map */

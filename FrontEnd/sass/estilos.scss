@@ -1,0 +1,17 @@
+$colorP1: rgb(16, 28, 61);
+$colorS: #fff;
+$colorT: rgb(135, 206, 250);
+$negro: #000;
+$gris: #999;
+$rojo: red;
+$rojoDark: rgb(117, 0, 0);
+
+@import 'generales';
+
+@import 'nav';
+
+@import 'header';
+
+@import 'section';
+
+@import 'footer';

@@ -1,0 +1,118 @@
+.section {
+  min-height: 70vh;
+}
+
+.section .contenido {
+  width: 10%;
+  margin: 30px;
+}
+
+.section .contenido .separador {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section .contenido .separador .alterno {
+  padding: 10px;
+  background: rgba(16, 28, 61, 0.2);
+  border: #101c3d solid 1px;
+  width: 30%;
+  height: 40px;
+}
+
+.section .contenido .separador .alterno:hover {
+  background: rgba(16, 28, 61, 0.4);
+}
+
+.section .contenido .separador .alterno:focus {
+  background: rgba(16, 28, 61, 0.6);
+  border: none;
+}
+
+.section .contenido .form {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  width: 50%;
+  margin: auto;
+}
+
+.section .contenido .form .label {
+  display: block;
+  width: 60%;
+  margin-top: 20px;
+  color: #101c3d;
+}
+
+.section .contenido .form .txtInput {
+  display: block;
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: lightskyblue solid 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 40px;
+}
+
+.section .contenido .form .txtInput:focus {
+  border: #101c3d solid 3px;
+  border-radius: 150px;
+}
+
+.section .contenido .form .alterno {
+  padding: 10px;
+  background: rgba(16, 28, 61, 0.2);
+  border: #101c3d solid 1px;
+  width: 60%;
+  height: 40px;
+  margin: 20px;
+}
+
+.section .contenido .form .alterno:hover {
+  background: rgba(16, 28, 61, 0.4);
+}
+
+.section .contenido .form-activo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+
+.section .contenido .log {
+  max-height: 300px;
+}
+
+.section .contenido .error {
+  background: red;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+  margin: auto;
+  display: none;
+  text-align: center;
+}
+
+.section .contenido .e-activo {
+  display: block;
+}
+/*# sourceMappingURL=login.css.map */

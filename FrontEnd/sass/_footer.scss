@@ -1,0 +1,22 @@
+.contenedor{
+    .footer{
+        grid-area: footer;
+        background: url('../img/bg/dark-paths.png');
+        background-attachment: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        .btn-capa{
+            border-radius: 10px;
+        }
+        .descripcion{
+            margin: 20px;
+            width: 100%;
+            text-align: center;
+            p{
+                margin: 20px;
+            }
+        }
+    }
+}

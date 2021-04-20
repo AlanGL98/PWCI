@@ -1,0 +1,102 @@
+$colorP1: rgb(16, 28, 61);
+$colorS: #fff;
+$colorT: rgb(135, 206, 250);
+$negro: #000;
+$gris: #999;
+$verde: rgb(0, 177, 0);
+$rojoDark: rgb(117, 0, 0);
+
+.section{
+    min-height: 66.5vh;
+    .list-carrito{
+        width: 60%;
+        color: $negro;
+        // background: rgba($gris, 0.2);
+        padding: 20px;
+        .separador{
+            width: 100%;
+            color: $negro;
+            font-weight: bold;
+            border-bottom: solid $negro 5px;
+            background: $colorS;
+        }
+        .list-cursos{
+            padding: 20px;
+            margin: 20px;
+            .detalles{
+                width: 70%;
+                padding: 20px;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                border-bottom: $colorP1 solid 1px;
+                .titulo{
+                    width: 70%;
+                    color: $colorP1;
+                }
+                .precio{
+                    color: $colorP1;
+                }
+            }
+            .curso{
+                width: 70%;
+                padding: 20px;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: $colorP1 solid 1px;
+                .titulo{
+                    width: 70%;
+                    color: $colorP1;
+                }
+                .precio{
+                    color: $colorP1;
+                }
+                .eliminar{
+                    color: $rojoDark;
+                    &:hover{
+                        color: $colorS;
+                        background: $rojoDark;
+                    }
+                }
+            }
+            .subtotal{
+                width: 70%;
+                padding: 20px;
+                margin: auto;
+                //background: rgba($gris, 0.2);
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                .titulo{
+                    width: 70%;
+                    color: $colorP1;
+                }
+                .total{
+                    color: $verde;
+                }
+            }
+            .botones{
+                width: 70%;
+                margin: auto;
+                display: flex;
+                justify-content: space-around;
+                .btn-capa{
+                    font-weight: bold;
+                    color: $colorP1;
+                    background: $colorS;
+                    border: $colorP1 solid 1px;
+                    &:hover{
+                        background: $colorP1;
+                        color: $colorS;
+                    }
+                }
+            }
+        }
+    }
+}

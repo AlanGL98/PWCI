@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+        font-size: 16px;
+    font-family: sans-serif;
+    color: $colorS;
+    //background: url('../img/bg/dark-paths.png');
+    //background-attachment: fixed;
+}
+
+h1 {
+    color: $colorS;
+    font-size: 2em;
+}
+h2 {
+    color: $colorS;
+    font-size: 1.75em;
+}
+h3 {
+    color: $colorS;
+    font-size: 1.5em;
+}
+h4{
+    color: $colorS;
+    font-size: 1.25em;
+}
+
+a{
+    text-decoration: none;
+    color: $colorS;
+    &:hover{
+        color: $colorS;
+    }
+}
+
+button{
+    background: none;
+    color: $colorS;
+}
+
+.btn-capa{
+    border: none;
+    color: $colorS;
+    outline: none;
+    padding: 10px;
+    transition: 0.2s;
+    &:hover{
+        background:  rgba($colorS, 0.3);
+    }
+}
+
+.alterno{
+    color: $colorP1;
+    &:hover{
+        background:  rgba($colorP1, 0.5);
+    }
+}
+
+.temas{
+    width: 23%;
+    border: $colorP1 solid 1px;
+    color: $colorP1;
+    margin: 5px;
+    text-align: center;
+    &:hover{
+        background:  rgba($colorP1, 0.5);
+    }
+}
+
+.card-curso{
+    border: $gris solid 1px;
+    //overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 23%;
+    margin: 10px;
+    transition: 0.2s;
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+    &:hover{
+        background: rgba($gris, 0.5);
+        border: none;
+    }
+    .img{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        opacity: 85%;
+        margin-bottom: 10px;
+        border-radius: 10px 10px 0px 0px;
+        img{
+            width: 140%;
+        }
+    }
+    .separa{
+        margin: 1px 10px;
+    }
+    .titulo{
+        color: $negro;
+        width: 100%;
+    }
+    .autor{
+        color: $gris;
+        width: 100%;
+    }
+    .precio{
+        color: $negro;
+        width: 100%;
+        text-align: end;
+    }
+    .nuevo{
+        background: rgba($rojo, 0.5);
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        border-radius: 0px 0px 10px 10px;
+        h4{
+            width: 100%;
+            color: $rojoDark;
+            text-align: center;
+            font-size: 0.8em;
+        }
+    }
+    .detalles{
+        position: absolute;
+        width: 90%;
+        left: 100%;
+        border: $gris solid 1px;
+        background: $colorS;
+        border-radius: 10px;
+        display: none;
+        z-index: 1;
+        .titulo{
+            margin: 0;
+        }
+        .descripcion{
+            margin: 10px;
+            color: $negro;
+        }
+        .temas-curso{
+            margin: 0 25px;
+            color: rgba($negro, 0.7);
+        }
+    }
+
+    .d-activo{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 16px;
+    }
+}
+
+.img-header{
+    width: 100%;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 60px auto auto auto auto;
+    grid-gap: 0 20px;
+    grid-template-areas:    "header header"
+                            "categorias categorias"
+                            "section section"
+                            "nulo nulo2"
+                            "footer footer";
+    transition: 200ms;
+}

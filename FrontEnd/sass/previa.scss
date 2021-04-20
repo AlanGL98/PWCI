@@ -1,0 +1,162 @@
+$colorP1: rgb(16, 28, 61);
+$colorS: #fff;
+$colorT: rgb(135, 206, 250);
+$negro: #000;
+$gris: #999;
+$rojo: red;
+$rojoDark: rgb(117, 0, 0);
+
+.section{
+    //height: 50vh;
+    .info{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        .cabecera{
+            width: 100%;
+            background: $rojoDark;
+            .detalles{
+                width: 70%;
+                margin: auto;
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                .info{
+                    width: 70%;
+                    .titulo{
+                        font-weight: bold;
+                        font-size: 2.2em;
+                        width: 100%;
+                    }
+                    .descripcion{
+                        width: 100%;
+                        font-size: 1.2em;
+                    }
+                    .autor{
+                        width: 100%;
+                        color: rgba($colorS, 0.7);
+                        margin-left: 20px;
+                    }
+                }
+                .compra-cesta{
+                    width: 30%;
+                    padding: 10px;
+                    background: $colorS;
+                    border-radius: 5px;
+                    border: $rojoDark solid 1px;
+                    position: absolute;
+                    right: 0;
+                    .img{
+                        width: 100%;
+                        margin-bottom: 20px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .alterno{
+                        width: 100%;
+                        border: $colorP1 solid 1px;
+                        &:hover{
+                            background: $colorP1;
+                            color: $colorS;
+                        }
+                    }
+                }
+            }
+        }
+
+        .seccion{
+            width: 100%;
+            .info{
+                width: 70%;
+                margin: auto;
+                padding: 20px;
+                .por-aprender{
+                    width: 70%;
+                    padding: 20px;
+                    border: rgba($negro, 0.8) solid 1px;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .titulo{
+                        width: 100%;
+                        font-weight: bold;
+                        color: rgba($negro, 0.8);
+                    }
+                    .punto{
+                        margin: 10px;
+                        width: 40%;
+                        color: rgba($negro, 0.6);
+                        .fas{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .secciones-curso{
+                    margin-top: 20px;
+                    width: 70%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    //border: $negro solid 1px;
+                    border-radius: 5px;
+                    .titulo{
+                        width: 100%;
+                        margin: 10px;
+                        color: $negro;
+                    }
+                    .detalles{
+                        color: rgba($negro, 0.7);
+                        width: 100%;
+                        margin: 5px 10px;
+                        font-size: 1em;
+                    }
+                    .btn-capa{
+                        text-align: left;
+                        width: 100%;
+                        background: rgba($gris, 0.2);
+                        color: $negro;
+                        border: $negro solid 1px;
+                        border-radius: 2.5px;
+                        &:hover{
+                            background: rgba($gris, 0.3);
+                        }
+                        &:focus{
+                            background: rgba($gris, 0.4);
+                        }
+                        .fas{
+                            margin-right: 10px;
+                        }
+                    }
+                    .s{
+                        width: 100%;
+                        color: $negro;
+                        overflow: hidden;
+                        height: 0px;
+                        transition: 0.2s;
+                        display: flex;
+                        flex-wrap: wrap;
+                        background: rgba($gris, 0.05);
+                        border-radius: 2.5px;
+                        a{
+                            width: 100%;
+                        }
+                        
+                        .punto{
+                            width: 100%;
+                            color: $negro;
+                            padding: 10px 20px;
+                            margin-bottom: 0;
+                        }
+                    }
+                    .s-activo{
+                        height: auto;
+                        border: $gris solid 1px;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}

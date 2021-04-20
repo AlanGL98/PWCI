@@ -1,0 +1,64 @@
+.nav-menu {
+    position: fixed;
+    background: url('../img/bg/dark-paths.png');
+    background-attachment: fixed;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 3;
+    width: 0px;
+    height: 200%;
+    top: 0;
+    transition: 200ms;
+    .btn-capa{
+        text-align: left;
+        transition: 0.2s;
+        font-size: 1em;
+        padding: 10px;
+        width: 100%;
+        height: 40px;
+        &:focus{
+            background: rgba($colorS, 0.2);
+        }
+        .fas{
+            margin-right: 10px;
+        }
+        .fab{
+            margin-right: 10px;
+        }
+    }
+    .bsm{
+        width: 100%;
+    }
+    .sm{
+        //height: 100px;
+        width: 300px;
+        display: none;
+        //background: $gris;
+        padding-left: 20px;
+    }
+    .sm-activo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .opciones{
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        .btn-capa{
+            width: 100%;
+        }
+        .bsm{
+            border-top: $colorS solid 1px;
+            border-bottom: $colorS solid 1px;
+        }
+    }
+}
+
+.menu-activo {
+    width: 300px;
+}

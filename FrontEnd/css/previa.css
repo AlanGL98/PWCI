@@ -1,0 +1,190 @@
+.section .info {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.section .info .cabecera {
+  width: 100%;
+  background: #750000;
+}
+
+.section .info .cabecera .detalles {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.section .info .cabecera .detalles .info {
+  width: 70%;
+}
+
+.section .info .cabecera .detalles .info .titulo {
+  font-weight: bold;
+  font-size: 2.2em;
+  width: 100%;
+}
+
+.section .info .cabecera .detalles .info .descripcion {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.section .info .cabecera .detalles .info .autor {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 20px;
+}
+
+.section .info .cabecera .detalles .compra-cesta {
+  width: 30%;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  border: #750000 solid 1px;
+  position: absolute;
+  right: 0;
+}
+
+.section .info .cabecera .detalles .compra-cesta .img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.section .info .cabecera .detalles .compra-cesta .img img {
+  width: 100%;
+}
+
+.section .info .cabecera .detalles .compra-cesta .alterno {
+  width: 100%;
+  border: #101c3d solid 1px;
+}
+
+.section .info .cabecera .detalles .compra-cesta .alterno:hover {
+  background: #101c3d;
+  color: #fff;
+}
+
+.section .info .seccion {
+  width: 100%;
+}
+
+.section .info .seccion .info {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+
+.section .info .seccion .info .por-aprender {
+  width: 70%;
+  padding: 20px;
+  border: rgba(0, 0, 0, 0.8) solid 1px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section .info .seccion .info .por-aprender .titulo {
+  width: 100%;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.section .info .seccion .info .por-aprender .punto {
+  margin: 10px;
+  width: 40%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.section .info .seccion .info .por-aprender .punto .fas {
+  margin-right: 10px;
+}
+
+.section .info .seccion .info .secciones-curso {
+  margin-top: 20px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.section .info .seccion .info .secciones-curso .titulo {
+  width: 100%;
+  margin: 10px;
+  color: #000;
+}
+
+.section .info .seccion .info .secciones-curso .detalles {
+  color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  margin: 5px 10px;
+  font-size: 1em;
+}
+
+.section .info .seccion .info .secciones-curso .btn-capa {
+  text-align: left;
+  width: 100%;
+  background: rgba(153, 153, 153, 0.2);
+  color: #000;
+  border: #000 solid 1px;
+  border-radius: 2.5px;
+}
+
+.section .info .seccion .info .secciones-curso .btn-capa:hover {
+  background: rgba(153, 153, 153, 0.3);
+}
+
+.section .info .seccion .info .secciones-curso .btn-capa:focus {
+  background: rgba(153, 153, 153, 0.4);
+}
+
+.section .info .seccion .info .secciones-curso .btn-capa .fas {
+  margin-right: 10px;
+}
+
+.section .info .seccion .info .secciones-curso .s {
+  width: 100%;
+  color: #000;
+  overflow: hidden;
+  height: 0px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: rgba(153, 153, 153, 0.05);
+  border-radius: 2.5px;
+}
+
+.section .info .seccion .info .secciones-curso .s a {
+  width: 100%;
+}
+
+.section .info .seccion .info .secciones-curso .s .punto {
+  width: 100%;
+  color: #000;
+  padding: 10px 20px;
+  margin-bottom: 0;
+}
+
+.section .info .seccion .info .secciones-curso .s-activo {
+  height: auto;
+  border: #999 solid 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+/*# sourceMappingURL=previa.css.map */

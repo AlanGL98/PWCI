@@ -1,0 +1,94 @@
+.contenedor{
+    .section{
+        grid-area: section;
+        display: flex;
+        justify-content: center;
+        .contenido{
+            width: 70%;
+            .aprendizaje{
+                margin: 25px 0px;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .titulo{
+                    width: 80%;
+                    color: $negro;
+                }
+                .btn-capa{
+                    width: 20%;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+                .curso{
+                    margin: 20px 0;
+                    width: 30%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    height: 150px;
+                    border: $gris solid 1px;
+                    transition: 0.2s;
+                    position: relative;
+                    &:hover{
+                        background: rgba($gris, 0.2);
+                        border: none;
+                    }
+                    .img{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 30%;
+                        overflow: hidden;
+                        img{
+                            width: 250%;
+                        }
+                    }
+                    .descripcion{
+                        width: 70%;
+                        padding: 10px;
+                        position: relative;
+                        .titulo{
+                            color: $gris;
+                        }
+                        .capitulo{
+                            margin: 5px;
+                            color: $negro;
+                        }
+                    }
+                    .autor{
+                        position: absolute;
+                        right: 10px;
+                        bottom: 10px;
+                        color: $gris;
+                    }
+                    .icono{
+                        position: absolute;
+                        background: rgba($negro, 0.3);
+                        left: 11%;
+                        top: 38%;
+                        padding: 10px;
+                        border-radius: 10px;
+                        &:hover{
+                            background: rgba($negro, 0.5);
+                        }
+                    }
+                }
+            }
+            
+            .separador{
+                color: $negro;
+                margin: 10px 0;
+            }
+
+            .list-cursos{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
